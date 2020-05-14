@@ -3,13 +3,18 @@
 # Requirements
 - Python 2.7
 - An operating system (tested on Ubuntu)
+- apt install python
 
-# Installation
+# Installation Tools Segurity
 - sudo su
 - git clone https://github.com/ViKtorMacias/UbuntuForWork.git && cp UbuntuForWork/ToolsSegurity.py /usr/bin/ToolsSegurity
-- chmod +x /usr/bin/UbuntuForWork
-- sudo UbuntuForWork 
-
+- chmod +x /usr/bin/ToolsSegurity
+- sudo ToolsSegurity 
+# Installation ModSegurity WAF 
+- sudo su
+- git clone https://github.com/ViKtorMacias/UbuntuForWork.git && cp UbuntuForWork/WAFModSegurity.py /usr/bin/WAFModSegurity
+- chmod +x /usr/bin/WAFModSegurity
+- sudo WAFModSegurity 
 # Video
 
 

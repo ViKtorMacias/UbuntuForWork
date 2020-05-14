@@ -61,7 +61,7 @@ def main():
 					elif repo == "gohome":
 						inicio1()
 					elif repo == "4":
-						cmd5 = os.system("udo EXTERNAL_URL='https://gitlab.example.com' apt-get install gitlab-ee")
+						cmd5 = os.system("sudo EXTERNAL_URL='https://gitlab.example.com' apt-get install gitlab-ee")
 
 					else:
 						print ("\033[1;31mSorry, that was an invalid command!\033[1;m") 					

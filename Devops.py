@@ -21,7 +21,7 @@ def main():
  \__|  \__| \_______|   \____/  \______/  \______/ \__|\__|\__|  \__| V1.0 Alfa \033[1;m
 
 
- \033[1;32m+ -- -- +=[ Author: ∨工匚匕口尺 Ｊ∪ㄥ工口 爪丹匚工丹ち | Homepage: www.pagina.com\033[1;m
+ \033[1;32m+ -- -- +=[ Author: Victor Julio Macias | Homepage: www.pagina.com\033[1;m
  \033[1;32m+ -- -- +=[ 331 Tools DevOps\033[1;m
 
 

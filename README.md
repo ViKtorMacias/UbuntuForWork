@@ -15,6 +15,11 @@
 - git clone https://github.com/ViKtorMacias/UbuntuForWork.git && cp UbuntuForWork/WAFModSegurity.py /usr/bin/WAFModSegurity
 - chmod +x /usr/bin/WAFModSegurity
 - sudo WAFModSegurity 
+# Installation DevOps Tools 
+- sudo su
+- git clone https://github.com/ViKtorMacias/UbuntuForWork.git && cp UbuntuForWork/WAFModSegurity.py /usr/bin/Devops
+- chmod +x /usr/bin/Devops
+- sudo Devops 
 # Video
 
 

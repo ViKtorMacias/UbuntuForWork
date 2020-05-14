@@ -1,0 +1,12 @@
+#manejo cache Git
+git config credential.helper
+git config credential.helper 'cache --timeout=3000000'
+
+*** Por favor cuéntame quien eres.
+
+Corre
+
+
+ git config --global user.email "you@example.com"
+ git config --global user.name "Tu Nombre"
+

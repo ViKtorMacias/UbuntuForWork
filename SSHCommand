@@ -15,3 +15,5 @@ scp usuario_ssh@servidor:/archivo/remoto /archivo/local
 ¿Qué pasa si lo que quieres copiar es un directorio? Para copiar un directorio por ssh debemos usar la opción -r. Veamos cómo sería:
 
 scp -r usuario_ssh@servidor:/dir/remoto /dir/local
+#generar llave
+ssh-keygen -t ed25519 -C  "juliomacias@gmail.com"

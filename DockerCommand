@@ -1,4 +1,6 @@
-Comandos genericos
+
+
+#Comandos genericos
 
     docker pull NOMBREIMAGEN . Este comando sirve para descargar una imagen 
     docker images  muestra imágenes que tenemos descargadas
@@ -9,14 +11,14 @@ Comandos genericos
     docker inspect <friendly-name|container-id> . para saber acerca del contenedor
     docker logs <friendly-name|container-id>
 
-Comandos para el contenedor
+#Comandos para el contenedor
 
     docker start
     docker stop
     docker kill
     docker rm
 
-Docker composer
+#Docker composer
 
     docker-compose up -d  // Levantar la maquina con un fichero docker-compose  hay que entrar en la carpeta donde este el fichero
     docker-compose down

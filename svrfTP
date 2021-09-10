@@ -1,0 +1,59 @@
+#Instalación del servidor FTP
+
+apt install vsftpd
+
+#Configuración del servidor
+
+sudo nano /etc/vsftpd.conf
+
+#--------------------------------------------------------
+listen=NO
+listen_ipv6=YES
+anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+local_umask=022
+dirmessage_enable=YES
+use_localtime=YES
+xferlog_enable=YES
+connect_from_port_20=YES
+chroot_local_user=YES
+secure_chroot_dir=/var/run/vsftpd/empty
+pam_service_name=vsftpd
+rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+ssl_enable=Yes
+pasv_enable=Yes
+allow_writeable_chroot=YES
+ssl_tlsv1=YES
+ssl_sslv2=NO
+ssl_sslv3=NO
+local_root=/miRuta #Si no quieres que sea home, sino otra ruta
+file_open_mode=0777
+listen_port=21 #Cambiarlo para que no esté por default
+#Si no tienes un certificado SSL válido para tu servidor
+force_local_logins_ssl=NO
+force_local_data_ssl=NO
+#--------------------------------------------------------
+
+Habilitar el servicio
+
+sudo systemctl enable vsftpd.service
+
+Iniciar el servicio
+
+sudo systemctl start vsftpd.service
+
+Para reiniciar el servicio
+
+sudo systemctl restart vsftpd.service
+
+Para verificar el estatus del servicio:
+
+sudo systemctl status vsftpd.service
+
+Ahora bien, si necesitamos crear un usuario nuevo para que pueda utilizar el servicio FTP se realiza de la siguiente manera:
+
+
+sudo adduser elUsuario
+sudo passwd elUsuario

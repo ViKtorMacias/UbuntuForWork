@@ -1,0 +1,17 @@
+
+#copiar file al remoto
+scp /archivo/local usuario_ssh@servidor:/archivo/remoto
+scp UpdateSystem.sh  v1kt0r@192.168.1.15:/home/v1kt0r/UpdateSystem.sh
+
+
+De este modo, transferimos nuestro archivo local con el usuario_ssh a nuestro servidor y se guardará en la ruta especificada después de los dos puntos. Si el servidor al que te estás conectado no usa el puerto por defecto, puedes especificar el puerto co la opción -P (mayúscula) de la siguiente forma:
+
+scp -P 2222 /archivo/local usuario_ssh@servidor:/archivo/remoto
+
+De igual forma podemos descargar un archivo por SSH a nuestra máquina. Para descargar un archivo a nuestra máquina por SSH lo haríamos de la siguiente forma:
+
+scp usuario_ssh@servidor:/archivo/remoto /archivo/local
+
+¿Qué pasa si lo que quieres copiar es un directorio? Para copiar un directorio por ssh debemos usar la opción -r. Veamos cómo sería:
+
+scp -r usuario_ssh@servidor:/dir/remoto /dir/local
